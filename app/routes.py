@@ -8,6 +8,7 @@ import requests
 
 # this webhook receives from the API
 
+db = ''  # The database
 
 @app.route('/')
 def home():
@@ -27,7 +28,11 @@ def webhook():
             task_info = request.form
         id = task_info.get('id')
         name = task_info.get('name')
-
+        subtask = subTask()
+        subtask.id = id
+        subtask.name = name
+        db.save(subtask)
+        db.commit()
         with open(file, mode='a', newline='') as f:
             writer = csv.writer(f)
             if f.tell() == 0:
