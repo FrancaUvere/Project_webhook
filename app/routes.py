@@ -2,9 +2,7 @@ from app import app
 from app.models import *
 from app import save_webhook_output_file as file
 from flask import request, jsonify
-from app import basic_auth
 import csv
-import requests
 
 # this webhook receives from the API
 
@@ -18,7 +16,6 @@ def home():
 
 
 @app.route('/webhook', methods=['POST', 'PUT'])
-@basic_auth.login_required
 def webhook():
     """This receives the payload, stores the required information"""
     if request.method == 'POST':
