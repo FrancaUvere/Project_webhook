@@ -44,8 +44,8 @@ def webhook():
             task_info = request.get_json()
         else:
             task_info = request.form
-        old_id = task_info.get('old_id')
-        row_index = find_cell_indices(file, old_id)
+        id = task_info.get('id')
+        row_index = find_cell_indices(file, id)
         name = task_info.get('name')
         # subtask = subTask.query.filter_by(id=old_id).first()
         # if subtask:
@@ -66,8 +66,8 @@ def webhook():
                 writer.writeheader()
                 writer.writerows(rows)
         if success == 0:
-            return jsonify({'message': f'task_id,  {old_id}, not found'}), 400
-        return jsonify({'message': f'task_id,  {old_id}, modified \
+            return jsonify({'message': f'task_id,  {id}, not found'}), 400
+        return jsonify({'message': f'task_id,  {id}, modified \
 succesfully'}), 200
 
 
