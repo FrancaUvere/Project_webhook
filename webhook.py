@@ -10,17 +10,7 @@ Import the function to the file where the database is configured
 """
 
 
-def save_to_db(db):
-    """Saves the data from the csv file to the database"""
-    with open(file, mode='r') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            subtask = subTask()
-            subtask.id = row['id']
-            subtask.name = row['name']
-            db.save(subtask)
-            db.commit()
-    return True
+
 
 
 if __name__ == '__main__':
