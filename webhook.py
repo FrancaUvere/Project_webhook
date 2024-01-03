@@ -17,9 +17,11 @@ def get_collection_uid(collection_name):
     return 'This collection does not exist'
 
 
+
 def create_collection_webhook(collection_uid):
     """Creates collection webhook using the id"""
     url = 'https://api.getpostman.com/webhooks'
+    #not including a 'workspace id' will create a webhook for the 'My workspace'
     headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
     # running a POST request to the url
     webhook_name = 'ClickUp Webhook'  # random name for webhook
