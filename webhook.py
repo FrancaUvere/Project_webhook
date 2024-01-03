@@ -35,7 +35,7 @@ def create_collection_webhook(collection_uid, workspace_id):
 
     #not including a 'workspace id' will create a webhook for the 'My workspace'
     params = {'workspace': workspace_id}
-    headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key, params: params}
+    headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
     # running a POST request to the url
     webhook_name = 'ClickUp Webhook'  # random name for webhook
     data = {
@@ -44,7 +44,7 @@ def create_collection_webhook(collection_uid, workspace_id):
             "collection": collection_uid
             }
         }
-    data = requests.post(url, headers=headers, json=data)
+    data = requests.post(url, headers=headers, params=params, json=data)
     data = data.json()
     info = {
         'name': data['webhook']['name'],
