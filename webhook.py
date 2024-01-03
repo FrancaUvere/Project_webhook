@@ -31,8 +31,14 @@ def create_collection_webhook(collection_uid):
         }
     data = requests.post(url, headers=headers, json=data)
     data = data.json()
+    info = {
+        'name': data['webhook']['name'],
+        'uid': data['webhook']['uid'],
+        'id': data['webhook']['id'],
+        'webhookUrl': data['webhook']['webhookUrl']
+        }
     # returning the webhook url
-    return data['webhook']['webhookUrl']
+    return info
 
 
 collection_id = get_collection_uid(collection_name)
