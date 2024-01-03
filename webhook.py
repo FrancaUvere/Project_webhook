@@ -18,7 +18,7 @@ def get_collection_uid(collection_name):
     return None
 
 
-def get_workspace_id():
+def get_workspace_id(workspace_name):
     """Get workspace id from specified data"""
     url = 'https://api.getpostman.com/workspaces'
     headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
@@ -57,5 +57,5 @@ def create_collection_webhook(collection_uid, workspace_id):
 
 
 collection_id = get_collection_uid(collection_name)
-workspace_id = get_workspace_id()
+workspace_id = get_workspace_id(workspace_name)
 print(create_collection_webhook(collection_id, workspace_id))
