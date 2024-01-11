@@ -41,7 +41,10 @@ def create_collection_webhook(collection_uid, workspace_id):
     data = {
         "webhook": {
             "name": webhook_name,
-            "collection": collection_uid
+            "collection": collection_uid,
+            "events": [
+                "taskCreated", "taskUpdated"
+            ]
             }
         }
     data = requests.post(url, headers=headers, params=params, json=data)
