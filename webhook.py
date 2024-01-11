@@ -1,73 +1,37 @@
 import requests
+import json
 """Create a webhook URL using POSTMAN for a collection"""
 
-from ngrok_url import ngrok_url
 
 collection_name = 'ClickUp Public API'  # name of collection
-api_key = ''  # api key for the POSTMAN API
-workspace_name = '' #name of workspace
+api_key = 'pk_62491440_N291XGYX67GC7D9OEAR0A03QG4PV119P'  # personal api key
+ngrok_url = ' https://b88d-102-88-68-44.ngrok-free.app'
 
 
-def get_collection_uid(collection_name):
-    """Get collection id from specified data"""
-    url = 'https://api.getpostman.com/collections'
-    headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
-    data = requests.get(url, headers=headers)
-    data = data.json()
-    for collection_info in data['collections']:
-        if collection_info['name'] == collection_name:
-            return collection_info['uid']
-    return None
-
-
-def get_workspace_id(workspace_name):
-    """Get workspace id from specified data"""
-    url = 'https://api.getpostman.com/workspaces'
-    headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
-    data = requests.get(url, headers=headers)
-    data = data.json()
-    for workspace_info in data['workspaces']:
-        if workspace_info['name'] == workspace_name:
-            return workspace_info['id']
-    return None
-
-def create_collection_webhook(collection_uid, workspace_id, endpoint):
+def create_collection_webhook(team_id, endpoint):
     """Creates collection webhook using the id"""
-    url = 'https://api.getpostman.com/webhooks'
+    url = "https://api.clickup.com/api/v2/team/{}/webhook".format(team_id)
 
-    #not including a 'workspace id' will create a webhook for the 'My workspace'
-    params = {'workspace': workspace_id}
-    headers = {'Content-Type': 'application/json', 'X-API-KEY': api_key}
-    # running a POST request to the url
-    webhook_name = 'ClickUp Webhook'  # random name for webhook
-    data = {
-        "webhook": {
-            "name": webhook_name,
-            "collection": collection_uid,
-            "events": [
-                "taskCreated", "taskUpdated"
-            ]
-            },
-            "webhookUrl": endpoint
-        }
-    data = requests.post(url, headers=headers, params=params, json=data)
-    data = data.json()
-    # info = {
-    #     'name': data['webhook']['name'],
-    #     'uid': data['webhook']['uid'],
-    #     'id': data['webhook']['id'],
-    #     'webhookUrl': data['webhook']['webhookUrl']
-    #     }
-    # returning the webhook url
-    return data
+    payload = json.dumps({
+    "endpoint": "https://09a7-102-88-68-44.ngrok-free.ap",
+    "events": [
+        "taskCreated",
+        "taskUpdated",
+        "taskDeleted"
+    ]
+    })
+    headers = {
+    'Content-Type': 'application/json',
+    'Authorization': api_key
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload)
+    return response.text
 
 
-collection_id = get_collection_uid(collection_name)
-workspace_id = get_workspace_id(workspace_name)
-data = create_collection_webhook(collection_id, workspace_id, ngrok_url)
+data = create_collection_webhook('9015266874', ngrok_url)
 
 print(data)
 
-url = data['webhookUrl']
 
 
