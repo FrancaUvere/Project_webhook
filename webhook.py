@@ -1,6 +1,8 @@
 import requests
 """Create a webhook URL using POSTMAN for a collection"""
 
+from ngrok_url import ngrok_url
+
 collection_name = 'ClickUp Public API'  # name of collection
 api_key = ''  # api key for the POSTMAN API
 workspace_name = '' #name of workspace
@@ -29,7 +31,7 @@ def get_workspace_id(workspace_name):
             return workspace_info['id']
     return None
 
-def create_collection_webhook(collection_uid, workspace_id):
+def create_collection_webhook(collection_uid, workspace_id, endpoint):
     """Creates collection webhook using the id"""
     url = 'https://api.getpostman.com/webhooks'
 
@@ -45,20 +47,27 @@ def create_collection_webhook(collection_uid, workspace_id):
             "events": [
                 "taskCreated", "taskUpdated"
             ]
-            }
+            },
+            "webhookUrl": endpoint
         }
     data = requests.post(url, headers=headers, params=params, json=data)
     data = data.json()
-    info = {
-        'name': data['webhook']['name'],
-        'uid': data['webhook']['uid'],
-        'id': data['webhook']['id'],
-        'webhookUrl': data['webhook']['webhookUrl']
-        }
+    # info = {
+    #     'name': data['webhook']['name'],
+    #     'uid': data['webhook']['uid'],
+    #     'id': data['webhook']['id'],
+    #     'webhookUrl': data['webhook']['webhookUrl']
+    #     }
     # returning the webhook url
-    return info
+    return data
 
 
 collection_id = get_collection_uid(collection_name)
 workspace_id = get_workspace_id(workspace_name)
-print(create_collection_webhook(collection_id, workspace_id))
+data = create_collection_webhook(collection_id, workspace_id, ngrok_url)
+
+print(data)
+
+url = data['webhookUrl']
+
+
