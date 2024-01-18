@@ -17,7 +17,7 @@ def create_collection_webhook(team_id, endpoint):
     url = "https://api.clickup.com/api/v2/team/{}/webhook".format(team_id)
 
     payload = json.dumps({
-    "endpoint": endpoint,
+    "endpoint": '{}/webhook'.format(endpoint),
     "events": [
         "taskCreated",
         "taskUpdated",
