@@ -1,0 +1,91 @@
+﻿Task_ID;Task_Name;Custom_Field_ID;Custom_Field_Name;Field_Type;Field_Value
+86bwuq5aj;Project Title from SalesForce;7f3895fd-7d16-4964-a9aa-4284632d885c;Account Manager;users;
+86bwuq5aj;Project Title from SalesForce;f699f4d2-4f41-48e4-99cd-e7e7163c5435;Charge Type;drop_down;1
+86bwuq5aj;Project Title from SalesForce;b268bef4-72de-4364-b52f-5d9c7834a2db;Contract ID;short_text;Contract  Number 1
+86bwuq5aj;Project Title from SalesForce;73608030-2f2b-4fd8-88d8-a376513a39a3;Estimated v Tracked;formula;2.4
+86bwuq5aj;Project Title from SalesForce;84a3c6e2-9ae3-4c53-b627-aacd9f62138a;Project Closure;attachment;
+86bwuq5aj;Project Title from SalesForce;689e9b07-88aa-41d2-9d6d-68dda34a5ac1;Project Closure (Month);drop_down;
+86bwuq5aj;Project Title from SalesForce;51b21db7-b211-4523-a16a-3cdae294fc2d;Project Start (Month);drop_down;
+86bwuq5aj;Project Title from SalesForce;5eefce0a-818d-4af6-865f-e98214032cb9;Salesforce Link;url;https://www.pylones.gr
+86bwuq5aj;Project Title from SalesForce;e76611b8-4b6b-4cd3-aa3b-60443b2845cc;Έγγραφα Ανάθεσης Έργου ;checkbox;
+86bwuq5aj;Project Title from SalesForce;04f7a07d-7657-4640-9d88-c7ab895aa275;Κατηγορία έργου;drop_down;
+86bwuq5aj;Project Title from SalesForce;b53ca370-2362-43a9-9843-f28379671b22;Ποσοστό Ολοκλήρωσης Έργου;manual_progress;{'current': 0, 'percent_completed': 0}
+86bwuq5aj;Project Title from SalesForce;c78ebdf7-bd2a-4d4b-80c8-dd5a7bcd9294;Ποσοστό Ολοκλήρωσης του Έργου %;automatic_progress;{'percent_complete': 0}
+86bwuq5aj;Project Title from SalesForce;f1788b5c-f788-451a-b207-563e525ef839;Στοιχεία επικοινωνίας Πελάτη;text;Διάφορα στοιχεία επικοινωνίας πελάτη που περιλαμβάνει τα Account Contact & External Contact Person
+86bwuq5aj;Project Title from SalesForce;89ad1b8b-f0b5-4d3c-9fcf-f901ddcae376;Τρίμηνο;drop_down;
+86bwuq5aj;Project Title from SalesForce;d9065f7b-2560-448e-8fb4-6b7d4fdb890a;Υπέρβαση Χρόνου;formula;🟢
+86bwuq5aj;Project Title from SalesForce;2b0357a1-fd03-4037-b04c-44697756d8c3;Χρονικές Αποκλίσεις (Estimated v Actual);number;
+86bwuq5aj;Project Title from SalesForce;0bd175a1-0d31-4b93-b89d-a1284efa82df;Project ID;short_text;Project ID from SF
+86bwuq5aj;Project Title from SalesForce;68bb833e-8ab2-4ec4-8f7d-0f79ab44b1b9;Πελατης ;drop_down;
+86bwupvhe;Task Name from SalesForce;7f3895fd-7d16-4964-a9aa-4284632d885c;Account Manager;users;
+86bwupvhe;Task Name from SalesForce;f699f4d2-4f41-48e4-99cd-e7e7163c5435;Charge Type;drop_down;1
+86bwupvhe;Task Name from SalesForce;b268bef4-72de-4364-b52f-5d9c7834a2db;Contract ID;short_text;Contract  Number 1
+86bwupvhe;Task Name from SalesForce;73608030-2f2b-4fd8-88d8-a376513a39a3;Estimated v Tracked;formula;2.4
+86bwupvhe;Task Name from SalesForce;84a3c6e2-9ae3-4c53-b627-aacd9f62138a;Project Closure;attachment;
+86bwupvhe;Task Name from SalesForce;689e9b07-88aa-41d2-9d6d-68dda34a5ac1;Project Closure (Month);drop_down;
+86bwupvhe;Task Name from SalesForce;51b21db7-b211-4523-a16a-3cdae294fc2d;Project Start (Month);drop_down;
+86bwupvhe;Task Name from SalesForce;5eefce0a-818d-4af6-865f-e98214032cb9;Salesforce Link;url;https://www.pylones.gr
+86bwupvhe;Task Name from SalesForce;e76611b8-4b6b-4cd3-aa3b-60443b2845cc;Έγγραφα Ανάθεσης Έργου ;checkbox;
+86bwupvhe;Task Name from SalesForce;04f7a07d-7657-4640-9d88-c7ab895aa275;Κατηγορία έργου;drop_down;
+86bwupvhe;Task Name from SalesForce;b53ca370-2362-43a9-9843-f28379671b22;Ποσοστό Ολοκλήρωσης Έργου;manual_progress;{'current': 0, 'percent_completed': 0}
+86bwupvhe;Task Name from SalesForce;c78ebdf7-bd2a-4d4b-80c8-dd5a7bcd9294;Ποσοστό Ολοκλήρωσης του Έργου %;automatic_progress;{'percent_complete': 0}
+86bwupvhe;Task Name from SalesForce;f1788b5c-f788-451a-b207-563e525ef839;Στοιχεία επικοινωνίας Πελάτη;text;Διάφορα στοιχεία επικοινωνίας πελάτη που περιλαμβάνει τα Account Contact & External Contact Person
+86bwupvhe;Task Name from SalesForce;89ad1b8b-f0b5-4d3c-9fcf-f901ddcae376;Τρίμηνο;drop_down;
+86bwupvhe;Task Name from SalesForce;d9065f7b-2560-448e-8fb4-6b7d4fdb890a;Υπέρβαση Χρόνου;formula;🟢
+86bwupvhe;Task Name from SalesForce;2b0357a1-fd03-4037-b04c-44697756d8c3;Χρονικές Αποκλίσεις (Estimated v Actual);number;
+86bwupvhe;Task Name from SalesForce;0bd175a1-0d31-4b93-b89d-a1284efa82df;Project ID;short_text;Project ID from SF
+86bwupvhe;Task Name from SalesForce;68bb833e-8ab2-4ec4-8f7d-0f79ab44b1b9;Πελατης ;drop_down;1
+86bwr2a60;Project 2 από SalesForce;7f3895fd-7d16-4964-a9aa-4284632d885c;Account Manager;users;[{'id': 18339211, 'username': 'Kostas Kypris', 'email': 'ckypris@pylones.gr', 'color': '#1b5e20', 'initials': 'KK', 'profilePicture': None}]
+86bwr2a60;Project 2 από SalesForce;f699f4d2-4f41-48e4-99cd-e7e7163c5435;Charge Type;drop_down;1
+86bwr2a60;Project 2 από SalesForce;b268bef4-72de-4364-b52f-5d9c7834a2db;Contract ID;short_text;P-00001
+86bwr2a60;Project 2 από SalesForce;73608030-2f2b-4fd8-88d8-a376513a39a3;Estimated v Tracked;formula;7
+86bwr2a60;Project 2 από SalesForce;84a3c6e2-9ae3-4c53-b627-aacd9f62138a;Project Closure;attachment;
+86bwr2a60;Project 2 από SalesForce;689e9b07-88aa-41d2-9d6d-68dda34a5ac1;Project Closure (Month);drop_down;
+86bwr2a60;Project 2 από SalesForce;51b21db7-b211-4523-a16a-3cdae294fc2d;Project Start (Month);drop_down;
+86bwr2a60;Project 2 από SalesForce;5eefce0a-818d-4af6-865f-e98214032cb9;Salesforce Link;url;https://www.pylones.gr
+86bwr2a60;Project 2 από SalesForce;e76611b8-4b6b-4cd3-aa3b-60443b2845cc;Έγγραφα Ανάθεσης Έργου ;checkbox;
+86bwr2a60;Project 2 από SalesForce;04f7a07d-7657-4640-9d88-c7ab895aa275;Κατηγορία έργου;drop_down;
+86bwr2a60;Project 2 από SalesForce;b53ca370-2362-43a9-9843-f28379671b22;Ποσοστό Ολοκλήρωσης Έργου;manual_progress;{'current': 0, 'percent_completed': 0}
+86bwr2a60;Project 2 από SalesForce;c78ebdf7-bd2a-4d4b-80c8-dd5a7bcd9294;Ποσοστό Ολοκλήρωσης του Έργου %;automatic_progress;{'percent_complete': 0}
+86bwr2a60;Project 2 από SalesForce;f1788b5c-f788-451a-b207-563e525ef839;Στοιχεία επικοινωνίας Πελάτη;text;Διάφορα στοιχεία επικοινωνίας πελάτη που περιλαμβάνει τα Account Contact & External Contact Person
+86bwr2a60;Project 2 από SalesForce;89ad1b8b-f0b5-4d3c-9fcf-f901ddcae376;Τρίμηνο;drop_down;
+86bwr2a60;Project 2 από SalesForce;d9065f7b-2560-448e-8fb4-6b7d4fdb890a;Υπέρβαση Χρόνου;formula;🟢
+86bwr2a60;Project 2 από SalesForce;2b0357a1-fd03-4037-b04c-44697756d8c3;Χρονικές Αποκλίσεις (Estimated v Actual);number;
+86bwr2a60;Project 2 από SalesForce;0bd175a1-0d31-4b93-b89d-a1284efa82df;Project ID;short_text;PR-002
+86bwr2a60;Project 2 από SalesForce;68bb833e-8ab2-4ec4-8f7d-0f79ab44b1b9;Πελατης ;drop_down;1
+86bwr293r;Project 1 από SalesForce;7f3895fd-7d16-4964-a9aa-4284632d885c;Account Manager;users;
+86bwr293r;Project 1 από SalesForce;f699f4d2-4f41-48e4-99cd-e7e7163c5435;Charge Type;drop_down;
+86bwr293r;Project 1 από SalesForce;b268bef4-72de-4364-b52f-5d9c7834a2db;Contract ID;short_text;
+86bwr293r;Project 1 από SalesForce;73608030-2f2b-4fd8-88d8-a376513a39a3;Estimated v Tracked;formula;2.4
+86bwr293r;Project 1 από SalesForce;84a3c6e2-9ae3-4c53-b627-aacd9f62138a;Project Closure;attachment;
+86bwr293r;Project 1 από SalesForce;689e9b07-88aa-41d2-9d6d-68dda34a5ac1;Project Closure (Month);drop_down;
+86bwr293r;Project 1 από SalesForce;51b21db7-b211-4523-a16a-3cdae294fc2d;Project Start (Month);drop_down;
+86bwr293r;Project 1 από SalesForce;5eefce0a-818d-4af6-865f-e98214032cb9;Salesforce Link;url;
+86bwr293r;Project 1 από SalesForce;e76611b8-4b6b-4cd3-aa3b-60443b2845cc;Έγγραφα Ανάθεσης Έργου ;checkbox;
+86bwr293r;Project 1 από SalesForce;04f7a07d-7657-4640-9d88-c7ab895aa275;Κατηγορία έργου;drop_down;
+86bwr293r;Project 1 από SalesForce;b53ca370-2362-43a9-9843-f28379671b22;Ποσοστό Ολοκλήρωσης Έργου;manual_progress;{'current': 0, 'percent_completed': 0}
+86bwr293r;Project 1 από SalesForce;c78ebdf7-bd2a-4d4b-80c8-dd5a7bcd9294;Ποσοστό Ολοκλήρωσης του Έργου %;automatic_progress;{'percent_complete': 0}
+86bwr293r;Project 1 από SalesForce;f1788b5c-f788-451a-b207-563e525ef839;Στοιχεία επικοινωνίας Πελάτη;text;
+86bwr293r;Project 1 από SalesForce;89ad1b8b-f0b5-4d3c-9fcf-f901ddcae376;Τρίμηνο;drop_down;
+86bwr293r;Project 1 από SalesForce;d9065f7b-2560-448e-8fb4-6b7d4fdb890a;Υπέρβαση Χρόνου;formula;🟢
+86bwr293r;Project 1 από SalesForce;2b0357a1-fd03-4037-b04c-44697756d8c3;Χρονικές Αποκλίσεις (Estimated v Actual);number;
+86bwr293r;Project 1 από SalesForce;0bd175a1-0d31-4b93-b89d-a1284efa82df;Project ID;short_text;PR-001
+86bwr293r;Project 1 από SalesForce;68bb833e-8ab2-4ec4-8f7d-0f79ab44b1b9;Πελατης ;drop_down;0
+86bwqta5m;Project from Salesforce 1;7f3895fd-7d16-4964-a9aa-4284632d885c;Account Manager;users;
+86bwqta5m;Project from Salesforce 1;f699f4d2-4f41-48e4-99cd-e7e7163c5435;Charge Type;drop_down;
+86bwqta5m;Project from Salesforce 1;b268bef4-72de-4364-b52f-5d9c7834a2db;Contract ID;short_text;
+86bwqta5m;Project from Salesforce 1;73608030-2f2b-4fd8-88d8-a376513a39a3;Estimated v Tracked;formula;
+86bwqta5m;Project from Salesforce 1;84a3c6e2-9ae3-4c53-b627-aacd9f62138a;Project Closure;attachment;
+86bwqta5m;Project from Salesforce 1;689e9b07-88aa-41d2-9d6d-68dda34a5ac1;Project Closure (Month);drop_down;
+86bwqta5m;Project from Salesforce 1;51b21db7-b211-4523-a16a-3cdae294fc2d;Project Start (Month);drop_down;
+86bwqta5m;Project from Salesforce 1;5eefce0a-818d-4af6-865f-e98214032cb9;Salesforce Link;url;
+86bwqta5m;Project from Salesforce 1;e76611b8-4b6b-4cd3-aa3b-60443b2845cc;Έγγραφα Ανάθεσης Έργου ;checkbox;
+86bwqta5m;Project from Salesforce 1;04f7a07d-7657-4640-9d88-c7ab895aa275;Κατηγορία έργου;drop_down;
+86bwqta5m;Project from Salesforce 1;b53ca370-2362-43a9-9843-f28379671b22;Ποσοστό Ολοκλήρωσης Έργου;manual_progress;{'current': 0, 'percent_completed': 0}
+86bwqta5m;Project from Salesforce 1;c78ebdf7-bd2a-4d4b-80c8-dd5a7bcd9294;Ποσοστό Ολοκλήρωσης του Έργου %;automatic_progress;{'percent_complete': 0}
+86bwqta5m;Project from Salesforce 1;f1788b5c-f788-451a-b207-563e525ef839;Στοιχεία επικοινωνίας Πελάτη;text;
+86bwqta5m;Project from Salesforce 1;89ad1b8b-f0b5-4d3c-9fcf-f901ddcae376;Τρίμηνο;drop_down;
+86bwqta5m;Project from Salesforce 1;d9065f7b-2560-448e-8fb4-6b7d4fdb890a;Υπέρβαση Χρόνου;formula;
+86bwqta5m;Project from Salesforce 1;2b0357a1-fd03-4037-b04c-44697756d8c3;Χρονικές Αποκλίσεις (Estimated v Actual);number;
+86bwqta5m;Project from Salesforce 1;0bd175a1-0d31-4b93-b89d-a1284efa82df;Project ID;short_text;
+86bwqta5m;Project from Salesforce 1;68bb833e-8ab2-4ec4-8f7d-0f79ab44b1b9;Πελατης ;drop_down;0
